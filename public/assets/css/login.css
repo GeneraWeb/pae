@@ -1,0 +1,42 @@
+#loginInterface{
+	padding-top: 5em;
+}
+#loginInterface .G_login {
+	width: 232px;
+	height: 48px;
+	position: relative;
+	display: inline-block;
+}
+
+#loginInterface .G_login img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	transform: .5s ease-in;
+	cursor: pointer;
+}
+#loginInterface .G_login img.normal {
+	opacity: 1;
+}
+#loginInterface .G_login:hover img.normal {
+	opacity: 0;
+}
+#loginInterface .G_login:hover img.focus {
+	opacity: 1;
+}
+#loginInterface .G_login:focus img.normal {
+	opacity: 0;
+}
+#loginInterface .G_login:focus img.focus {
+	opacity: 1;
+}
+#loginInterface .G_login:active img.normal {
+	opacity: 0;
+}
+#loginInterface .G_login:active img.focus {
+	opacity: 0;
+}
+#loginInterface .G_login:active img.pressed {
+	opacity: 1;
+}

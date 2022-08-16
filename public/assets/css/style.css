@@ -1,0 +1,164 @@
+nav{
+	margin-bottom: 2em;
+}
+nav .navbar-brand img {
+	max-height: 2em;
+}
+h2 i {
+	margin-right: .3em;
+	color: gray;
+}
+
+h1:before {content: "";background: #E21F23;position: absolute;left: 0px;height: .1em;width: 3em;bottom: 0px;}
+
+h1 {
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	margin-top: .5em;
+}
+
+label, p.label {
+	font-size: .8em;
+	color: #666666;
+}
+
+nav.navbar ul.dropdown-menu li i {
+	color: gray;
+	margin-right: 0.5em;
+}
+
+nav.navbar ul.dropdown-menu li {
+	font-size: .9em;
+	line-height: 2em;
+}
+
+.dropdown-menu {
+	padding: 0px;
+}
+
+.dropdown-divider {
+	margin: 0px;
+}
+
+.toast .close {
+	position: absolute;
+	right: .5em;
+	top: .5em;
+	float: right;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .5;
+}
+i#toggleSearch {
+	background: rgba(255,255,255,0);
+	cursor: pointer;
+	transition: .3s ease-in;
+	display: inline-block;
+	text-align: center;
+	line-height: 2em;
+	width: 2.5em;
+	height: 2em;
+	border-radius: 2em;
+}
+
+i#toggleSearch:hover {
+	background: rgba(255,255,255,1);
+	box-shadow: 1px 1px 3px grey;
+}
+#buscadorForm.activo i#toggleSearch {
+	background: rgba(255,255,255,1);
+	box-shadow: 1px 1px 3px grey;
+}
+#buscadorForm #buscadorInput{
+	max-width: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-color: rgba(0,0,0,0);
+	transition: .3s ease-in;
+}
+#buscadorForm.activo #buscadorInput{
+	max-width: 15em;
+	padding: .375rem .75rem;
+	border-color: #ced4da;
+}
+
+ul#resultados_buscadorForm {
+	position: absolute;
+	right: 3.3em;
+	top: 50px;
+	list-style: none;
+	border: solid 1px #DDDDDD;
+	background: white;
+	padding: 0px;
+	margin: 0px;
+	z-index: 20;
+}
+
+ul#resultados_buscadorForm li {
+	padding: 5px;
+	margin: 0px;
+	font-size: .9em;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+ul#resultados_buscadorForm a:last-child li {
+	border: none;
+}
+
+ul#resultados_buscadorForm a {
+	color: rgba(0,0,0,.55);
+	text-decoration: none;
+}
+
+ul#resultados_buscadorForm li:hover {
+	background: #f8f9fa;
+	color: black;
+}
+ul#resultados_buscadorForm li.nota {
+	border: none;
+}
+ul#resultados_buscadorForm li.nota:hover {
+	background: none;
+	color: rgba(0,0,0,.55);
+}
+
+.floatAdd {
+	float: right;
+	border-radius: 3em;
+}
+
+.sugerenciasInput ul.listaSugerencias {list-style: none;padding: 0px;margin: 0px;position: absolute;background: rgba(255,255,255,.8);margin-top: -2px;max-width: calc(100% - 2em);display: none;}
+
+.sugerenciasInput {
+	position: relative;
+}
+.sugerenciasInput ul.listaSugerencias {
+	position: absolute;
+}
+.sugerenciasInput ul.listaSugerencias li {
+	padding: .5em;
+	border: solid 1px #DDDDDD;
+	cursor: pointer;
+	transition: .2s ease-in;
+	color: gray;
+}
+
+.sugerenciasInput ul.listaSugerencias li:hover {
+	color: black;
+}
+
+div#toastContainer {
+	position: fixed !important;
+	top: 2em;
+	right: 1em;
+}
+.toast{
+	position: relative;
+}

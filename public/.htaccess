@@ -1,0 +1,24 @@
+# One year for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico|webp)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+# One month for css and js
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+ErrorDocument 404 /404.php
+RewriteEngine On 
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^pae.testgw.com$ [NC]
+# RewriteRule ^ https://pae.testgw.com%{REQUEST_URI} [L,NE,R]
+RewriteRule ^backend\/?$ backend.php [QSA,L]
+RewriteRule ^login\/?$ login.php [QSA,L]
+RewriteRule ^logout\/?$ logout.php [QSA,L]
+RewriteRule ^oauth/Google\/?$ oauth_Google.php [QSA,L]
+RewriteRule ^cuenta\/?$ cuenta.php [QSA,L]
+RewriteRule ^configuracion\/?$ configuracion.php [QSA,L]
+RewriteRule ^usuarios\/?$ usuarios.php [QSA,L]
+RewriteRule ^caso\/?$ atencion.php [QSA,L]
+RewriteRule ^atencion\/?$ atencion.php [QSA,L]
+RewriteRule ^listado\/?$ listado.php [QSA,L]
+RewriteRule ^reporte_atencion\/?$ reporte_atencion.php [QSA,L]

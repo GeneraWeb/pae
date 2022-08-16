@@ -1,0 +1,19 @@
+td i.fas.fa-edit.text-primary {
+	cursor: pointer;
+}
+
+i.fas.fa-user-slash.text-danger {
+	display: none;
+}
+
+tr[data-activo='0'] i.fas.fa-user-slash.text-danger {
+	display: inline;
+}
+
+tr[data-activo='0'] i.fas.fa-user-check.text-success {
+	display: none;
+}
+
+tr[data-activo='0'] {
+	color: gray !important;
+}

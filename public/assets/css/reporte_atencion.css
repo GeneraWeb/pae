@@ -1,0 +1,23 @@
+.total{
+	font-weight: bold;
+}
+.chartAtenciones{
+	width: 100%;
+	height: 10em;
+	margin-bottom: 1em;
+}
+.table{
+	font-size: .8em;
+}
+th{
+	text-align: center;
+}
+h5{
+	color: #E21F23;
+}
+tbody tr td{
+	text-align: center;
+}
+tbody tr td:first-child{
+	text-align: left;
+}

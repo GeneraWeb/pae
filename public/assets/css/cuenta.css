@@ -1,0 +1,35 @@
+#sesionesAbiertas li i.fa-trash-alt {
+	color: #dc3545;
+	cursor: pointer;
+	position: absolute;
+	bottom: .5em;
+	right: .5em;
+	background: white;
+	border-radius: 2em;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	transition: .2s ease-in;
+}
+
+#sesionesAbiertas li span {
+	display: block;
+}
+
+#sesionesAbiertas li span.location {
+	font-size: .8em;
+}
+
+#sesionesAbiertas li span.dispositivo {
+	font-size: .8em;
+	color: gray;
+}
+#sesionesAbiertas li.actual i.fa-trash-alt {
+	display: none;
+}
+#sesionesAbiertas li i.fa-trash-alt:hover {
+	background: #dc3545;
+	color: white;
+	box-shadow: 1px 1px 2px gray;
+}

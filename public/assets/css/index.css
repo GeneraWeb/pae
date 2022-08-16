@@ -1,0 +1,12 @@
+.container .btn-lg{
+	margin-right: 1em;
+}
+.colectivo{
+	background: #E21F23;
+	border-color: #E21F23;
+}
+.container .btn-lg.colectivo:hover, .container .btn-lg.colectivo:active{
+	background: #ec2126;
+	border-color: #ec2126;
+	box-shadow: 0 0 0 0.25rem rgb(236 33 38 / 50%);
+}

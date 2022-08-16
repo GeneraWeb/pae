@@ -1,0 +1,49 @@
+ul#configuraciones {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+ul#configuraciones li {
+	display: inline-block;
+	width: 18em;
+	height: 7em;
+	border: solid 1px gray;
+	border-radius: 3px;
+	margin: .5em;
+	position: relative;
+	transition: .3s ease-in;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+
+ul#configuraciones li i {
+	position: absolute;
+	top: .5em;
+	left: .5em;
+	font-size: 2em;
+	color: gray;
+	transition: .3s ease-in;
+}
+
+
+ul#configuraciones li span {
+	top: 50%;
+	display: block;
+	transform: translateY(-50%);
+	padding-left: 3em;
+	padding-right: 3em;
+	position: absolute;
+	width: 100%;
+}
+ul#configuraciones li:hover{
+	background: #E21F23;
+	border-color: #E21F23;
+	box-shadow: 2px 2px 3px gray;
+	color: white;
+}
+ul#configuraciones li:hover i{
+	color: white
+}
